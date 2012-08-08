@@ -10,6 +10,23 @@
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(window).ready(function(){
+	for(var i=0; i<2; i++){
+		$("#btnLive"+i).click(function(e){
+			if(e.target.id.substr(7) == "0"){
+				$("#btnLive0").addClass("selected");
+				$("#btnLive1").removeClass("selected");
+				alert("시황")
+			}else{
+				$("#btnLive0").removeClass("selected");
+				$("#btnLive1").addClass("selected");
+				alert("라이브방송")
+			}
+		})
+	}
+})
+</script>
 </head>
 
 <body>
@@ -24,11 +41,17 @@
 		</div>
 		<div class="navi">
 			<ul>
-				<li class="extend"><a href="mn1.html"><img src="images/mn0.gif" alt="주파수 매니저란?"></a></li>
-				<li><a href="mn2.html"><img src="images/mn1.gif" alt="종목매니저"></a></li>
-				<li><a href="mn3.html"><img src="images/mn2_ov.gif" alt="SRS 종목검증"></a></li>
+				<li><a href="mn1.html"><img src="images/mn0.gif" alt="주파수 매니저란?"></a></li>
+				<li class="extended">
+					<a href="mn2.html"><img src="images/mn1_ov.gif" alt="종목매니저"></a>
+					<ul>
+						<li class="selected"><a href="mn2a.html">퀸트</a></li>
+						<li><a href="mn2f.html">Say</a></li>
+					</ul>
+				</li>
+				<li><a href="mn3.html"><img src="images/mn2.gif" alt="SRS 종목검증"></a></li>
 				<li><a href="mn4.html"><img src="images/mn3.gif" alt="차트매니저"></a></li>
-				<li><a href="mn5.html"><img src="images/mn4.gif" alt="서비스 가입/해지"></a></li>
+				<li class="extend"><a href="mn5.html"><img src="images/mn4.gif" alt="서비스 가입/해지"></a></li>
 				<li><a href="mn6.html"><img src="images/mn5.gif" alt="MY 주파수 화면"></a></li>
 			</ul>
 			<div class="cap"></div>
@@ -172,8 +195,8 @@
 			
 			<div class="g2">
 				<ul>
-					<li>시황</li>
-					<li class="selected">라이브방송</li>
+					<li id="btnLive0">시황</li>
+					<li id="btnLive1" class="selected">라이브방송</li>
 				</ul>
 				<div><img src="images/img_vod.gif" alt=""></div>
 			</div>
