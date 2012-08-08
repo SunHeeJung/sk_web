@@ -1,6 +1,7 @@
 
 * {margin:0; padding:0; list-style:none; font-size:13px}
 table {border-collapse:collapse; width:100%}
+img {border:none}
 
 div.leftMenu {float:left}
 div.login {width:174px; height:91px; background:url(../images/bg_login.gif) no-repeat; margin-bottom:8px; position:relative}
