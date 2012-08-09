@@ -50,7 +50,7 @@ div.btns {text-align:right; padding:10px 0; position:relative}
 div.btns p {position:absolute; left:0; top:15px}
 
 
-div.popWrapper {width:600px; height:600px; background:url(../images/bg_pop.jpg) no-repeat; position:relative}
+div.popWrapper {width:600px; height:600px; background:url(../images/bg_pop.jpg) no-repeat; position:relative; display:none; position:absolute; z-index:1000; top:40px; left:80px}
 div.popWrapper p.to {position:absolute; top:87px; left:84px}
 div.popWrapper p.from {position:absolute; top:414px; left:157px}
 div.popWrapper p.eng {position:absolute; top:414px; left:243px}
@@ -59,8 +59,13 @@ ul.steps {padding-bottom:30px; display:table}
 ul.steps li {float:left}
 
 div.grid {width:100%}
-ul.step {margin-bottom:15px; display:table}
-ul.step li {float:left}
+ul.investStep {margin-bottom:15px; display:table}
+ul.investStep li {float:left; width:237px; height:345px; position:relative}
+ul.investStep li.step0 {background:url(../images/step2_1a.gif) no-repeat; }
+ul.investStep li.step1 {background:url(../images/step2_1b.gif) no-repeat; }
+ul.investStep li.step2 {background:url(../images/step2_1c.gif) no-repeat; }
+ul.investStep li ul {position:absolute; left:27px; top:163px}
+ul.investStep li ul li {height:auto; cursor:pointer}
 
 div.grid4 {}
 div.grid4 .g1 {float:left; width:242px}
@@ -101,7 +106,7 @@ div.tpop .rate {position:absolute; top:45px; left:90px}
 div.tpop .red {color:red}
 div.tpop .blue {color:blue}
 
-
+#btnVod {cursor:pointer}
 
 
 
