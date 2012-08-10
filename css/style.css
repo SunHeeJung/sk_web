@@ -54,6 +54,7 @@ div.popWrapper {width:600px; height:600px; background:url(../images/bg_pop.jpg) 
 div.popWrapper p.to {position:absolute; top:87px; left:84px}
 div.popWrapper p.from {position:absolute; top:414px; left:157px}
 div.popWrapper p.eng {position:absolute; top:414px; left:243px}
+div.popWrapper p.uname {position:absolute; top:170px; left:370px; font-size:20px}
 
 ul.steps {padding-bottom:30px; display:table}
 ul.steps li {float:left}
