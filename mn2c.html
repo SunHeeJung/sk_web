@@ -10,6 +10,20 @@
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(window).ready(function(){
+	for(var i=0; i<4; i++){
+		$("#tr"+i).click(function(e){
+			try{
+				$("#tr"+idx).removeClass("selected")
+			}catch(e){}
+			idx = e.currentTarget.id.substr(2)
+			$("#tr"+idx).addClass("selected")
+		})
+	}
+})
+</script>
+
 </head>
 
 <body>
@@ -30,7 +44,7 @@
 	<div class="grid2">
 		<div class="g1">
 			<h3><img src="images/stit2_2a.gif" alt=""></h3>
-			<table class="gridTable">
+			<table class="gridTable selectable">
 				<colgroup>
 					<col width="*">
 					<col width="*">
@@ -45,7 +59,28 @@
 				</tr>
 				</thead>
 				<tbody>
-				<tr>
+				<tr id="tr0">
+					<th>1</th>
+					<td>저평가X저평가</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+				</tr>
+				<tr id="tr1">
+					<th>1</th>
+					<td>저평가X저평가</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+				</tr>
+				<tr id="tr2">
+					<th>1</th>
+					<td>저평가X저평가</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+				</tr>
+				<tr id="tr3">
 					<th>1</th>
 					<td>저평가X저평가</td>
 					<td>1.2%</td>

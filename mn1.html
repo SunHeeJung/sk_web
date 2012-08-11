@@ -44,6 +44,17 @@ $(window).ready(function(){
 			}, 500)
 		})
 	}
+	
+	//tr선택
+	for(var i=0; i<4; i++){
+		$("#tr"+i).click(function(e){
+			try{
+				$("#tr"+idx).removeClass("selected")
+			}catch(e){}
+			idx = e.currentTarget.id.substr(2)
+			$("#tr"+idx).addClass("selected")
+		})
+	}
 })
 </script>
 </head>
@@ -65,7 +76,7 @@ $(window).ready(function(){
 	
 	<div class="grid4">
 		<div class="g1">
-			<table class="gridTable">
+			<table class="gridTable selectable">
 				<colgroup>
 					<col width="*">
 					<col width="*">
@@ -81,22 +92,22 @@ $(window).ready(function(){
 				</tr>
 				</thead>
 				<tbody>
-				<tr>
+				<tr id="tr0">
 					<td>1</td>
 					<td>[퀸트]저평가주</td>
 					<td class="c red">5.35%</td>
 				</tr>
-				<tr>
+				<tr id="tr1">
 					<td>1</td>
 					<td>[퀸트]저평가주</td>
 					<td class="c red">5.35%</td>
 				</tr>
-				<tr>
+				<tr id="tr2">
 					<td>1</td>
 					<td>[퀸트]저평가주</td>
 					<td class="c red">5.35%</td>
 				</tr>
-				<tr>
+				<tr id="tr3">
 					<td>1</td>
 					<td>[퀸트]저평가주</td>
 					<td class="c red">5.35%</td>

@@ -35,17 +35,20 @@ div.account {clear:both; position:relative; margin:10px 0}
 div.account dl {border:1px solid #dbdbdb; background:#eee; padding:10px; height:15px}
 div.account dl dt {float:left; background:url(../images/bullet_arrow.gif) no-repeat 0 8px; padding:3px 0 0 10px}
 div.account dl dd {float:left; padding-left:10px; margin-right:20px}
-div.account div.searchbtn {position:absolute; right:7px; top:10px}\
+div.account div.searchbtn {position:absolute; right:7px; top:10px; cursor:pointer}
 
 table.gridTable {margin-bottom:20px; border-spacing:0px; border-top:2px solid #7c7c7c}
 table.gridTable th {background:#ebebeb; border:1px solid #b6b6b6; padding:5px; position:relative}
 table.gridTable th img {position:absolute; top:3px; right:3px}
-table.gridTable td {background:#fff; border:1px solid #b6b6b6; padding:5px}
+table.gridTable td {border:1px solid #b6b6b6; padding:5px}
 table.gridTable td img {vertical-align:middle}
 table.gridTable td.c {text-align:center}
 table.gridTable td.r {text-align:right}
 table.gridTable td.red {color:#ff2b00}
 table.gridTable td.blue {color:#217fff}
+table.selectable tr {background:#fff; cursor:pointer}
+table.selectable tr.selected {background:#e6f6ff}
+
 div.btns {text-align:right; padding:10px 0; position:relative}
 div.btns p {position:absolute; left:0; top:15px}
 
@@ -56,6 +59,8 @@ div.popWrapper p.from {position:absolute; top:414px; left:157px}
 div.popWrapper p.eng {position:absolute; top:414px; left:243px}
 div.popWrapper p.uname {position:absolute; top:170px; left:370px; font-size:20px}
 
+ul.step {padding-bottom:30px; display:table}
+ul.step li {float:left}
 ul.steps {padding-bottom:30px; display:table}
 ul.steps li {float:left}
 
@@ -77,11 +82,13 @@ div.grid4 .g1 td {padding:7px 0 8px 0}
 div.grid4 .g1 p, div.grid4 .g3 p {padding:10px 0}
 
 div.grid2 th, div.grid2 td {font-size:11px}
-div.grid2 .g1 {float:left; width:313px;}
-div.grid2 .g2 {float:left; width:372px; padding-left:10px}
+div.grid2 table {height:150px}
+div.grid2 .g1 {float:left; width:343px;}
+div.grid2 .g2 {float:left; width:342px; padding-left:10px}
 div.grid2 .g1 p {padding:10px 0}
 div.grid2 .g3 {float:left; width:413px;}
 div.grid2 .g4 {float:left; width:282px; padding-left:10px}
+.vod {cursor:pointer}
 
 div.grid2a .g1 {float:left}
 div.grid2a .g2 {float:left; padding-left:20px}
