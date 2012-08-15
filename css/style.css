@@ -48,10 +48,17 @@ table.gridTable td.red {color:#ff2b00}
 table.gridTable td.blue {color:#217fff}
 table.selectable tr {background:#fff; cursor:pointer}
 table.selectable tr.selected {background:#e6f6ff}
+table.gridTable td.tWrap {padding:0; border:none; vertical-align:top}
+#table0 td, #table1 td {width:230px}
+#table1 {display:none}
+#table1 td {padding:0}
+table.live {margin-bottom:10px}
+table.live td.msg {overflow:hidden; height:55px; font-size:11px}
+p.date {text-align:center; font-weight:bold; border:1px solid #B6B6B6}
 
 div.btns {text-align:right; padding:10px 0; position:relative}
 div.btns p {position:absolute; left:0; top:15px}
-
+#btnVod1 {display:none}
 
 div.popWrapper {width:600px; height:600px; background:url(../images/bg_pop.jpg) no-repeat; position:relative; display:none; position:absolute; z-index:1000; top:40px; left:80px}
 div.popWrapper p.to {position:absolute; top:87px; left:84px}
@@ -114,7 +121,7 @@ div.tpop .rate {position:absolute; top:45px; left:90px}
 div.tpop .red {color:red}
 div.tpop .blue {color:blue}
 
-#btnVod {cursor:pointer}
+#btnVod0 {cursor:pointer}
 
 
 
