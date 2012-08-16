@@ -34,7 +34,7 @@ $(window).ready(function(){
 		$("#tr"+i).click(function(e){
 			try{
 				$("#tr"+idx).removeClass("selected")
-			}catch(e){}
+			}catch(err){}
 			idx = e.currentTarget.id.substr(2)
 			$("#tr"+idx).addClass("selected")
 		})
@@ -76,7 +76,7 @@ $(window).ready(function(){
 				</colgroup>
 				<thead>
 				<tr>
-					<th colspan="2">퀸트 <a href=""><img src="images/btn_detail.gif" alt=""></a></th>
+					<th colspan="2"><div class="relative">퀸트 <a href=""><img src="images/btn_detail.gif" alt=""></a></div></th>
 				</tr>
 				</thead>
 				<tbody>
@@ -111,7 +111,7 @@ $(window).ready(function(){
 				</colgroup>
 				<thead>
 				<tr>
-					<th colspan="2">Say <a href=""><img src="images/btn_detail.gif" alt=""></a></th>
+					<th colspan="2"><div class="relative">Say <a href=""><img src="images/btn_detail.gif" alt=""></a></div></th>
 				</tr>
 				</thead>
 				<tbody>
@@ -147,7 +147,7 @@ $(window).ready(function(){
 				</colgroup>
 				<thead>
 				<tr>
-					<th colspan="2">종목매니저 수익률 <img src="images/btn_chart.gif" alt="" id="btnToggle"></th>
+					<th colspan="2"><div class="relative">종목매니저 수익률 <img src="images/btn_chart.gif" alt="" id="btnToggle"></div></th>
 				</tr>
 				</thead>
 				<tbody>
@@ -162,22 +162,22 @@ $(window).ready(function(){
 							</tr>
 							</thead>
 							<tbody>
-							<tr>
+							<tr id="tr0">
 								<td>1</td>
 								<td>[퀸트]저평가주</td>
 								<td class="red r">5.35%</td>
 							</tr>
-							<tr>
+							<tr id="tr1">
 								<td>1</td>
 								<td>[퀸트]저평가주</td>
 								<td class="red r">5.35%</td>
 							</tr>
-							<tr>
+							<tr id="tr2">
 								<td>1</td>
 								<td>[퀸트]저평가주</td>
 								<td class="red r">5.35%</td>
 							</tr>
-							<tr>
+							<tr id="tr3">
 								<td>1</td>
 								<td>[퀸트]저평가주</td>
 								<td class="red r">5.35%</td>
@@ -239,11 +239,10 @@ $(window).ready(function(){
 		
 		<div class="g2">
 			<ul>
-				<li id="btnLive0">시황</li>
-				<li id="btnLive1" class="selected">라이브방송</li>
+				<li id="btnLive0" class="selected">시황</li>
+				<li id="btnLive1">라이브방송</li>
 			</ul>
-			<div id="btnVod0"><img src="images/img_vod.gif" alt=""></div>
-			<div id="btnVod1">
+			<div id="btnVod0">
 				<p class="date">2012.6.1 Today 이슈</p>
 				<table class="gridTable live">
 					<thead>
@@ -266,6 +265,7 @@ $(window).ready(function(){
 				</table>
 				<p class="info">※ 주파수매니저 미가입 고객은 라이브 방송 10분간 무료 방송 보기가 가능합니다 </p>
 			</div>
+			<div id="btnVod1"><img src="images/img_vod.gif" alt=""></div>
 		</div>
 	</div>
 </div>

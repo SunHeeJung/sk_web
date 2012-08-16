@@ -8,15 +8,16 @@
 <meta name="viewport" content="width=880" />
 <title></title>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/content.css"/>
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript">
 $(window).ready(function(){
-	for(var i=0; i<4; i++){
+	for(var i=0; i<10; i++){
 		$("#tr"+i).click(function(e){
 			try{
 				$("#tr"+idx).removeClass("selected")
-			}catch(e){}
+			}catch(err){}
 			idx = e.currentTarget.id.substr(2)
 			$("#tr"+idx).addClass("selected")
 		})
@@ -87,6 +88,48 @@ $(window).ready(function(){
 					<td>1.2%</td>
 					<td>1.2%</td>
 				</tr>
+				<tr id="tr4">
+					<th>1</th>
+					<td>저평가X저평가</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+				</tr>
+				<tr id="tr5">
+					<th>1</th>
+					<td>저평가X저평가</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+				</tr>
+				<tr id="tr6">
+					<th>1</th>
+					<td>저평가X저평가</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+				</tr>
+				<tr id="tr7">
+					<th>1</th>
+					<td>저평가X저평가</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+				</tr>
+				<tr id="tr8">
+					<th>1</th>
+					<td>저평가X저평가</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+				</tr>
+				<tr id="tr9">
+					<th>1</th>
+					<td>저평가X저평가</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+					<td>1.2%</td>
+				</tr>
 				</tbody>
 			</table>
 			<p>※ 좌측 전략명을 클릭하시면 우측에서 전략별 수익률을 조회 하실 수 있습니다.</p>
@@ -94,7 +137,7 @@ $(window).ready(function(){
 		
 		<div class="g2">
 			<h3><img src="images/stit2_2b.gif" alt=""></h3>
-			<div><img src="images/img2_2.gif" alt=""></div>
+			<div class="chart"><img src="images/img2_2.gif" alt=""></div>
 
 			<table class="gridTable">
 				<colgroup>

@@ -23,7 +23,7 @@ $(window).ready(function(){
 					nodes += '<span class="rate blue">12.12</span>'
 					nodes += '</div>'
 				$(that).append(nodes)
-			}, 500, e)
+			}, 10, e)
 		}).mouseout(function(){
 			$(".tpop").remove()
 		})
@@ -41,7 +41,7 @@ $(window).ready(function(){
 		}).mouseout(function(){
 			setTimeout(function(){
 				$(".tpop").remove()
-			}, 500)
+			}, 10)
 		})
 	}
 	
@@ -50,7 +50,7 @@ $(window).ready(function(){
 		$("#tr"+i).click(function(e){
 			try{
 				$("#tr"+idx).removeClass("selected")
-			}catch(e){}
+			}catch(err){}
 			idx = e.currentTarget.id.substr(2)
 			$("#tr"+idx).addClass("selected")
 		})
